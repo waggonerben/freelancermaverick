@@ -23,7 +23,7 @@
 
         // You can call the function here or in response to a chat event
         // Example usage:
-        // typeWriterEffect("chatbotOutput", "Hello, this is the chatbot response.", 100);
+        // typeWriterEffect("chatbotOutput", "Hello, this is the chatbot response.", 200);
     </script>
 </body>
 </html>
