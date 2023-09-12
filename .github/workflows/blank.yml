@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Typewriter Effect</title>
+</head>
+<body>
+    <div id="chatbotOutput"></div>
+    
+    <script>
+        let i = 0;
+
+        function typeWriterEffect(elementId, text, speed) {
+            if (i < text.length) {
+                document.getElementById(elementId).innerHTML += text.charAt(i);
+                i++;
+                setTimeout(function() {
+                    typeWriterEffect(elementId, text, speed);
+                }, speed);
+            }
+        }
+
+        // You can call the function here or in response to a chat event
+        // Example usage:
+        // typeWriterEffect("chatbotOutput", "Hello, this is the chatbot response.", 100);
+    </script>
+</body>
+</html>
+
